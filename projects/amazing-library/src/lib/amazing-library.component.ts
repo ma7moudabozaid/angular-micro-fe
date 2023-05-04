@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-amazing-library',
   template: `
     <h1>
-    amazing library
+    Angular shared amazing library
     </h1>
   `,
   styles: [
