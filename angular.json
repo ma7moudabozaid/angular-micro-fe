@@ -333,6 +333,37 @@
           }
         }
       }
+    },
+    "adv": {
+      "projectType": "library",
+      "root": "projects/adv",
+      "sourceRoot": "projects/adv/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/adv/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/adv/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/adv/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/adv/src/test.ts",
+            "tsConfig": "projects/adv/tsconfig.spec.json",
+            "karmaConfig": "projects/adv/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }

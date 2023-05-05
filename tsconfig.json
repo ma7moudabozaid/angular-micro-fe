@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "adv": [
+        "dist/adv"
+      ],
       "amazing-library": [
         "dist/amazing-library"
       ]
